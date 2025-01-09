@@ -37,12 +37,17 @@ Step 4. Annotate the mapped reads by HOMER
 	
 	Output:
   	#	$sample.extendedFrags.sam.map_hg38.bed.anno
-   
-Step 5. Summarize the number of reads mapping to exon, Intron, 5'UTR,3'UTR
-			
+   			
 Step 5. Calculate the number of reads mapping to Exon, Intron, UTR of reference genome
 
 	perl count_Exon_Intron_UTR.pl $sample.extendedFrags.sam.map_hg38.bed.anno
 
 	Output:
-	#	$sample.extendedFrags.sam.map_hg38.bed.anno.count.summary
+	#	$sample.extendedFrags.sam.map_hg38.bed.anno.count
+
+ Step 6. Summarize the total number of reads mapping to exon, Intron, 5'UTR,3'UTR
+
+  	perl summarize_count.pl $sample.extendedFrags.sam.map_hg38.bed.anno.count 
+
+   	Output:
+    	#	$sample.extendedFrags.sam.map_hg38.bed.anno.count.summary
