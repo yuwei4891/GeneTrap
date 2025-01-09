@@ -3,7 +3,7 @@ DerianoLab-geneTrap pipeline
 
 These codes are the pipeline for sequencing analysis in high throughput gene trap  screen .
 
-Common tools utilized include Perl, BWA, samtools, ea-utils, bedtools, HOMER. 
+Common tools utilized include Perl, FLASH, BWA, samtools, ea-utils, bedtools, HOMER. 
 
 The procedures for processing sequencing reads in fastq format:
 
