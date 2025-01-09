@@ -27,7 +27,7 @@ Step 3.	Parase reads containing both the gene trap sequence and the reference se
 	perl find_read_with_genetrap_and_human_map_part.pl $sample.extendedFrags.sam
 	
 	Output the reads with mapped reference sequence part:
-	#				$sample.extendedFrags.sam.map_hg38.sam
+	#	$sample.extendedFrags.sam.map_hg38.sam
 					
 Step 4. Annotate the mapped reads by HOMER
 
@@ -36,11 +36,11 @@ Step 4. Annotate the mapped reads by HOMER
 	perl /HOMER/bin/annotatePeaks.pl $sample.extendedFrags.sam.map_hg38.bed hg38 >$sample.extendedFrags.sam.map_hg38.bed.anno
 	
 	Output:
-  #					$sample.extendedFrags.sam.map_hg38.bed.anno
+  	#	$sample.extendedFrags.sam.map_hg38.bed.anno
 			
 Step 5. Calculate the number of reads mapping to Exon, Intron, UTR of reference genome
 
 	perl count_Exon_Intron_UTR.pl $sample.extendedFrags.sam.map_hg38.bed.anno
 
   Output:
-	#					$sample.extendedFrags.sam.map_hg38.bed.anno.count
+	#	$sample.extendedFrags.sam.map_hg38.bed.anno.count
