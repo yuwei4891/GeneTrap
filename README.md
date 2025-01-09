@@ -20,8 +20,7 @@ Step 1. Merge read1 and read2 with at least 10 bp  overlap
 Step 2. Mapping merged read to human genome hg38 and genetrap sequence
 
 	bwa mem -t 8 /BWA_index/hg38_genetrap.fa $sample.extendedFrags.fastq >$sample.extendedFrags.sam
-
-#  Please merge reference genome and genetrap sequence and perform BWA index in advance, here we used hg38 reference
+	#  Please merge reference genome and genetrap sequence and perform BWA index in advance, here we used hg38 reference
 
 Step 3.	Parase reads containing both the gene trap sequence and the reference sequence
 	
