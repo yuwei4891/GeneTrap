@@ -50,4 +50,4 @@ Step 5. Calculate the number of reads mapping to Exon, Intron, UTR of reference 
   	perl summarize_count.pl $sample.extendedFrags.sam.map_hg38.bed.anno.count 
 
    	Output:
-    	#	$sample.extendedFrags.sam.map_hg38.bed.anno.count.summary
+    #	$sample.extendedFrags.sam.map_hg38.bed.anno.count.summary
